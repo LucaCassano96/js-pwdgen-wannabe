@@ -1,7 +1,7 @@
 
 /* Chiedi all’utente il suo nome  */
 
-let userName, userSurname, userColor, messaggioName, messaggioSurname, messaggioColor;
+let userName, userSurname, userColor, messaggioName, messaggioSurname, messaggioColor, password;
 
 userName = prompt ("inserisci il tuo nome");
 console.log(userName);
@@ -36,6 +36,9 @@ document.getElementById("prova-1").innerHTML = messaggioName;
 document.getElementById("prova-2").innerHTML = messaggioSurname;
 document.getElementById("prova-3").innerHTML = messaggioColor;
 
+/* password */
 
-
+password = `la tua password è: ${userName + userSurname + userColor + 21}`;
+console.log(password);
+document.getElementById("prova-4").innerHTML = password;
 
